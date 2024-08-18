@@ -140,9 +140,77 @@ console.log("-----------");
 // Delay Time: The second parameter is the delay in milliseconds before the callback function is executed.
 // 2000 milliseconds equals 2 seconds.
 // If you use 18000, the function will execute after 18 seconds.
-setTimeout(()=>{console.log("This message will be shown to the console after just 12 seconds after you save it")},12000);
-setTimeout(()=>{console.log("Carefully note that how long does it take to show this message")},16000);
-setTimeout(()=>{console.log('This message is delyaed by 18 seconds')},18000);
-setTimeout(()=>{console.log("keep patience when you code")},20000);
+// setTimeout(()=>{console.log("This message will be shown to the console after just 12 seconds after you save it")},12000);
+// setTimeout(()=>{console.log("Carefully note that how long does it take to show this message")},16000);
+// setTimeout(()=>{console.log('This message is delyaed by 18 seconds')},18000);
+// setTimeout(()=>{console.log("keep patience when you code")},20000);
 // now see what happens when you set time to 2 seconds
-setTimeout(()=>{console.log("Don't show this message again!")},2000);
+// setTimeout(()=>{console.log("Don't show this message again!")},2000);
+
+// Javascript object
+const any_thing={
+    name:"Bangladesh",
+    capital:"Dhaka",
+    Division:9
+}
+console.log(any_thing.name);
+console.log(any_thing.capital);
+console.log(any_thing.Division);
+// Here’s a breakdown of JavaScript objects with examples:
+// 1. Creating an Object
+// You can create an object in several ways:
+// Using Object Literal Notation
+// This is the most common way to create objects.
+const person={
+    name: "Rosina Akter",
+    age:45,
+    isEmployed: true,
+    greet: function(){
+        console.log(`Hello, my name is ${this.name}`);
+    }
+};
+
+console.log(person.name);
+console.log(person.isEmployed);
+console.log(person.age);
+person.greet();
+
+// Using the new Object() Syntax
+const cars=new Object();
+cars.make="Toyota";
+cars.model="Prado";
+cars.year=2022;
+console.log(cars.make);
+console.log(cars.model);
+// 2. Accessing Object Properties
+// You can access the properties of an object using either dot notation or bracket notation.
+const boook={
+    title:"Our Bangladesh",
+    author:"Mr. Samiul Islam",
+    year: 2022
+    
+}
+// Using Dot notation:
+console.log(boook.title);
+console.log(boook.author);
+console.log(boook.year);
+console.log("----------");
+// Using bracket notation:
+console.log(boook["title"]);
+console.log(boook["author"]);
+console.log(boook["year"]);
+// 3. Modifying Object Properties
+const students={
+    name: "Md. Muhaiminul Islam",
+    age:16,
+    school:"BAF Shaheen College",
+    class_roll:18
+}
+console.log(`The name of the student is ${students.name}, Student's age is ${students.age}, and this student reads in ${students.school} and his roll in class is ${students.class_roll}`);
+// The name of the student is Md. Muhaiminul Islam, Student's age is 16, and this student reads in BAF Shaheen College and his roll in class is 18
+// now we can modify students' age, name like as below;
+students.name="Md. Ashrful Islam";
+students.age=21;
+
+console.log(`The name of the student is ${students.name}, Student's age is ${students.age}, and this student reads in ${students.school} and his roll in class is ${students.class_roll}`);
+// output: The name of the student is Md. Ashrful Islam, Student's age is 21, and this student reads in BAF Shaheen College and his roll in class is 18
